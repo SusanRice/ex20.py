@@ -1,0 +1,44 @@
+# Passing parameters to script
+from sys import argv
+
+script, input_file = argv
+
+# Defining a function that will print the whole file.
+def print_all(f):
+    print(f.read())
+    
+# Defining a function that will rewind the file to the beginning.    
+def rewind(f)
+    f.seek(0)
+    
+# Defining a function to count lines
+def print_a_line(line_count, f):
+    print(line_count, f.readline())
+
+# Telling function to open a file
+current_file = open(input_file)
+
+# Print an instruction
+print("First let's print the whole file:\n"
+
+# Print the whole file
+print_all(current_file)
+
+# Print a new instruction
+print("Now let's rewind, kind of like a tape."
+
+# Go to the beginning of the file
+rewind(current_file)
+
+# Print a new instruction
+print("Let's print three lines:")
+
+# Count the lines
+current_line = 1
+print_a_line(current_line, current_file)
+
+current_line = current_line + 1
+print_a_line(current_line, current_file)
+
+current_line = current_line + 1
+print_a_line(current_line, current_file)
